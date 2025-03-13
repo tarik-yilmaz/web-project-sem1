@@ -1,8 +1,9 @@
-🏨 HOTEL PROJECT (1st Semester)
+🏨 GONDOR GRAND HOTEL, HOTEL PROJECT (1st Semester)
 
 📘 About This Repository
 This repository contains my very first semester project for a hotel reservation system. 
 It demonstrates the basics of full-stack web development using HTML, CSS, PHP, and SQL.
+**Fun Fact**: This project features a **Lord of the Rings** theme throughout its room names and decorative assets!
 
 🌐 Technologies Used
 • HTML & CSS for structuring and styling the web pages.
