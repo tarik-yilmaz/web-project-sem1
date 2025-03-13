@@ -1,0 +1,197 @@
+/* Global layout and typography */
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #3c2f2f 40%, #1d2323 100%);
+    color: #e2ddb5;
+    font-family: 'Georgia', serif;
+}
+
+main {
+    flex: 1; /* Fills space between header and footer */
+}
+
+p {
+    font-size: 1.1rem; /* Default paragraph size */
+}
+
+h2, .container h2 {
+    font-family: 'Cinzel', serif;
+    color: #bda55d;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #6a8f4d;
+    border: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #536b39;
+    transform: scale(1.05);
+}
+
+/* Links */
+a {
+    color: #bda55d;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #e2ddb5;
+    text-decoration: underline;
+}
+
+/* Navbar and footer */
+.navbar, .footer {
+    background-color: #2c3e3e;
+    color: #e2ddb5;
+}
+
+.navbar-brand, .nav-link, .footer p, .footer a {
+    color: #e2ddb5;
+}
+
+.navbar-brand {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1.8rem;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #bda55d;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #bda55d;
+}
+
+.footer a {
+    color: #bda55d;
+}
+
+.footer a:hover {
+    color: #e2ddb5;
+}
+
+/* Index page */
+.index-page {
+    background-image: url('images/gondor_hotel.jpg');
+    background-size: contain;  /* Ensures the whole image is visible without distortion */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #1d2323; /* Fallback color to avoid empty spaces */
+}
+
+
+/* FAQ page */
+.faq-page .accordion-button {
+    background-color: #2c3e3e;
+    color: #e2ddb5;
+    font-size: 1.1rem;
+}
+
+.faq-page .accordion-button:not(.collapsed) {
+    background-color: #4b3b3b;
+    color: #bda55d;
+}
+
+.faq-page .accordion-body {
+    background-color: #3c2f2f;
+    color: #e2ddb5;
+}
+
+/* Impressum page */
+.impressum-page .profile-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .impressum-page .profile-image {
+        max-width: 300px;
+    }
+}
+
+/* News page */
+.news-page .news-container {
+    margin: 20px 0;
+}
+
+.news-page .news-item {
+    background: linear-gradient(135deg, #2c3e3e, #1d2323);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.news-page .news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.news-page .news-item img {
+    display: block;
+    margin: 0 auto 15px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-page .news-item h3 {
+    color: #bda55d;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    font-size: 1.5rem;
+}
+
+.news-page .news-item p {
+    line-height: 1.6;
+    font-size: 1rem;
+    color: #e2ddb5;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+/* Reservations page */
+.reservations-page .room-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Upload news page */
+.upload-news-page .news-container {
+    margin: 20px 0;
+}
+
+.upload-news-page .news-item {
+    background-color: #2c3e3e;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: #e2ddb5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.upload-news-page .news-item img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.upload-news-page .news-item h3 {
+    color: #bda55d;
+}
